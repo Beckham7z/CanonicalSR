@@ -1,0 +1,15 @@
+{"name": "F-I.6.20a", "nv": 1, "true": "exp(-x0**2/2)", "pred": "exp(-0.5*x0**2)", "struct": true, "relerr": 0.0, "nrmse": 0.0, "route": "expwrap", "sec": 0.16}
+{"name": "F-I.6.2", "nv": 2, "true": "exp(-(x0/x1)**2/2)", "pred": "0.0505773*x0**2/x1+0.716668*x1-0.463443*x0**2+0.178773*x0**2*x1-0.226846*x1**2-0.000338261*x1**2/x0+0.000108714*x1/x0+0.00112198*x1**3+0.416694", "struct": false, "relerr": 38.2936951843, "nrmse": 0.25505563, "route": "narrow", "sec": 0.3}
+{"name": "F-I.9.18", "nv": 3, "true": "(x0*x1 + x1*x2)/(x0 + x1 + x2)", "pred": "0.000962477*x0*x1**2*x2+0.782776*x1-0.0590967*x1**2-0.211658*x1/x0+0.048365*x1*x2/x0+0.00719636*x0*x1-0.167173*x1/x2+0.0323632*x0*x1/x2+0.172161", "struct": false, "relerr": 0.0391744662, "nrmse": 0.02507895, "route": "narrow", "sec": 0.61}
+{"name": "F-I.12.1", "nv": 2, "true": "x0*x1", "pred": "x0*x1", "struct": true, "relerr": 0.0, "nrmse": 0.0, "route": "logspace", "sec": 0.0}
+{"name": "F-I.12.4", "nv": 3, "true": "x0*x1/(x2**2)", "pred": "1*(x0*x1)/((x2)**2)", "struct": true, "relerr": 0.0, "nrmse": 0.0, "route": "logdiff", "sec": 0.0}
+{"name": "F-I.12.5", "nv": 3, "true": "x0*x1*x2", "pred": "x0*x1*x2", "struct": true, "relerr": 0.0, "nrmse": 0.0, "route": "logspace", "sec": 0.0}
+{"name": "F-I.14.3", "nv": 3, "true": "x0*x1*x2", "pred": "x0*x1*x2", "struct": true, "relerr": 0.0, "nrmse": 0.0, "route": "logspace", "sec": 0.0}
+{"name": "F-I.14.4", "nv": 2, "true": "0.5*x0*x1**2", "pred": "(1/2)*x0*x1**2", "struct": true, "relerr": 0.0, "nrmse": 0.0, "route": "narrow", "sec": 0.01}
+{"name": "F-I.15.3x", "nv": 3, "true": "x0/(x1 + 0.5*x2)", "pred": "0.193969*x0/x2-0.0243068*x0*x1/x2-0.00249073*x1/x0-0.0789878*x0*x2/x1+0.44534*x0/x1+0.112357*x0-0.0486918*x0*log(x1/x2)+0.00379265", "struct": false, "relerr": 0.0237551939, "nrmse": 0.03779966, "route": "narrow", "sec": 0.56}
+{"name": "F-I.18.4", "nv": 3, "true": "(x0 - x1)/(x0 + x2)", "pred": "-0.0333831*x2/x0-0.049656*x0**2/x2-0.211925*x1/x0+0.279462*x0/x2-0.278576*x1/x2+0.0196246*x0**2-0.0022959*x0**2*x2+0.0154368*x0*x1/x2+0.275739", "struct": false, "relerr": 0.0547041011, "nrmse": 0.04783993, "route": "narrow", "sec": 0.54}
+{"name": "F-I.25.13", "nv": 2, "true": "x0/x1", "pred": "(x0)/(x1)", "struct": true, "relerr": 0.0, "nrmse": 0.0, "route": "logspace", "sec": 0.0}
+{"name": "F-I.30.5", "nv": 3, "true": "x0*x1*(x2**2)/2.0", "pred": "0.5*(x0*x1*(x2)**2)", "struct": true, "relerr": 0.0, "nrmse": 0.0, "route": "logdiff", "sec": 0.0}
+{"name": "F-I.32.5", "nv": 2, "true": "x0**2*x1**2", "pred": "1*((x0)**2*(x1)**2)", "struct": true, "relerr": 0.0, "nrmse": 0.0, "route": "logdiff", "sec": 0.0}
+{"name": "F-I.39.1", "nv": 2, "true": "x0*x1", "pred": "x0*x1", "struct": true, "relerr": 0.0, "nrmse": 0.0, "route": "logspace", "sec": 0.0}
+{"name": "F-II.2.42", "nv": 2, "true": "x0*sqrt(x1**2 - 1.0)", "pred": "0.968895*x0*x1-0.686395*x0/x1+0.127409*x0+0.00259136*x0*x1**2-0.0220767*x1-0.00064848*x1**3+0.00669076*x1**2+0.0231082", "struct": false, "relerr": 0.0002067452, "nrmse": 6.317e-05, "route": "narrow", "sec": 0.16}

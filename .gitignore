@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Test / cache
+.pytest_cache/
+.benchmarks/
+.coverage
+htmlcov/
+
+# Run artifacts / checkpoints
+outputs/
+*.pkl
+*.bak
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/

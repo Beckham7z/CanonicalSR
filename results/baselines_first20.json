@@ -1,0 +1,344 @@
+{
+ "rows": [
+  {
+   "idx": 1,
+   "true": "x0*(x3*(-x1 + x2) + 1.0)",
+   "imcts": {
+    "se": false,
+    "expr": "0.999999966347 * (x3 * (-2.00000000011 * (x3 * -0.000858438599169 * x1 + 0.00308283298309 / x2 + x1 + x0) + x2 + x0 + x1 + x0) * x0 + x0) - -1.94539105223e-08 * (x0 + x0)"
+   },
+   "pysr": {
+    "se": true,
+    "expr": "x0*x3*(-x1 + x2) + x0"
+   },
+   "llmsr": {
+    "se": false,
+    "expr": "def f(x):\n    import numpy as np\n    x0, x1 = x[:,0], x[:,1]\n    return 1.114793244276905e-05 * x0 * x1**2"
+   },
+   "sec": 125.2
+  },
+  {
+   "idx": 2,
+   "true": "x0*exp(x3*(-x1 + x2))",
+   "imcts": {
+    "se": false,
+    "expr": "0.999623371621 * (x3 * (-1.11841924374 / x1 * (-4.1454927868 + x0) * x1 + 15275.0766263) * x1 + x0) - (x3 * (x0 + x2) * x2 * -1.09048478929 + x2)"
+   },
+   "pysr": {
+    "se": true,
+    "expr": "x0*exp(x3*(-x1 + x2))"
+   },
+   "llmsr": {
+    "se": false,
+    "expr": "def f(x):\n    import numpy as np\n    x0, x1 = x[:,0], x[:,1]\n    return -0.6120018701769219 + 5888.8554145983435 * (x0 / (x1 + 5287.272288418959))"
+   },
+   "sec": 131.3
+  },
+  {
+   "idx": 3,
+   "true": "x0*(-x1 + x2)*(-x1 + (Abs(x1 - x2)))/(Abs(x1 - x2))",
+   "imcts": {
+    "se": false,
+    "expr": "x1 * -2.00000000695 * x0 + x2 * x0"
+   },
+   "pysr": {
+    "se": false,
+    "expr": "x0*(x2 - (x1 + x1))"
+   },
+   "llmsr": {
+    "se": false,
+    "expr": "def f(x):\n    import numpy as np\n    x0, x1 = x[:,0], x[:,1]\n    return 2.0413521346605333e-07 * (x0**3 - x1**3)"
+   },
+   "sec": 117.6
+  },
+  {
+   "idx": 4,
+   "true": "0.166666666666667*x2*x5/x1 + 0.166666666666667*x3*x4/x0",
+   "imcts": {
+    "se": false,
+    "expr": "(x0 - (907109.267717 - (exp(x4) - x0) / x1 / (x1 / ((sqrt(x0) - 81738500169.3) / sqrt(x0))))) / (x1 / ((sqrt(x0) - x5) / 7.73706900517) + -28.8271524154) / 0.997351883672 - 0.165603399839 * x3 / ((2.01070430553 - x0) / 1.00001128757) * x4"
+   },
+   "pysr": {
+    "se": false,
+    "expr": "x0/((x1*(-x4 - 0.9852427))) + x3*x4/(5567.9795*((x0*0.001079472)))"
+   },
+   "llmsr": {
+    "se": false,
+    "expr": "def f(x):\n    import numpy as np\n    x0, x1, x2, x3, x4, x5 = x[:,0], x[:,1], x[:,2], x[:,3], x[:,4], x[:,5]\n    return 1.0663013711229486e-19*x0*x1*x2 + 1.2986119828359756e-06*x3*x4 - 421.75490977411874*x5"
+   },
+   "sec": 129.3
+  },
+  {
+   "idx": 5,
+   "true": "0.666666666666667*x1*x2/x0",
+   "imcts": {
+    "se": true,
+    "expr": "x1 / (x0 / (0.666666664625 * x2))"
+   },
+   "pysr": {
+    "se": true,
+    "expr": "x1*x2*(-0.5959935)/(-x0 + x0/9.433096)"
+   },
+   "llmsr": {
+    "se": false,
+    "expr": "def f(x):\n    import numpy as np\n    x0, x1 = x[:, 0], x[:, 1]\n    return -1.2407006946471712e-07 * (x1 - x0)"
+   },
+   "sec": 117.7
+  },
+  {
+   "idx": 6,
+   "true": "x0 + 0.5*x1**2/x2",
+   "imcts": {
+    "se": true,
+    "expr": "x0 + 0.500000002559 / (x2 / (x1 * x1))"
+   },
+   "pysr": {
+    "se": true,
+    "expr": "x0 + x1/((x2/(0.5*x1)))"
+   },
+   "llmsr": {
+    "se": false,
+    "expr": "def f(x):\n    import numpy as np\n    x0, x1, x2 = x[:,0], x[:,1], x[:,2]\n    return 1581.438182124604 + 0.0004879258532527309 * x0 * x1 + -3.5893331423325975e-05 * x2**2"
+   },
+   "sec": 123.8
+  },
+  {
+   "idx": 7,
+   "true": "x0/(x1*x2*x3)**0.5",
+   "imcts": {
+    "se": false,
+    "expr": "2.26500402416 * x0 / (1.31569400917 + x2) * 1.01455017592 / (-0.180059386377 + sqrt(x3 * x1))"
+   },
+   "pysr": {
+    "se": true,
+    "expr": "x0/sqrt(x1*x2*x3)"
+   },
+   "llmsr": {
+    "se": false,
+    "expr": "def f(x):\n    import numpy as np\n    x0, x1 = x[:, 0], x[:, 1]\n    return x0 / (x1 + 1e-12)"
+   },
+   "sec": 126.2
+  },
+  {
+   "idx": 8,
+   "true": "x0*(x2**2*(0.5*x1 - 0.5) + 1.0)",
+   "imcts": {
+    "se": false,
+    "expr": "x0 * x1 * (0.761375658343 + (sqrt(x2) - 1) * 0.474127251221 + x0 * x1 * -8.3785287443e-08 * x2) * x2 * (x1 - (sqrt(x1) + sqrt(x2 + x1)) / 1.37684288636 / exp(2.39762538873 - x1) / 0.870188653193 * cos(0.407230495753 * log(log(x1) * x2 * 4.87556450396)))"
+   },
+   "pysr": {
+    "se": true,
+    "expr": "x0 + x2*x2*(x0*x1 - x0)/2.0"
+   },
+   "llmsr": {
+    "se": false,
+    "expr": "def f(x):\n    import numpy as np\n    x0, x1, x2 = x[:,0], x[:,1], x[:,2]\n    return 25.853960502033143 * np.exp(0.0006063058260436333*x0 + 2.35887902428495*x1 + 0.28139799658355835*x2)"
+   },
+   "sec": 127.5
+  },
+  {
+   "idx": 9,
+   "true": "x0*sqrt(x3*x4)/(x1*x2*sqrt(x5))",
+   "imcts": {
+    "se": false,
+    "expr": "10.9884865401 * exp(-494.248843385 / x4) * (x3 + -61.1324657455 * x0 + x1 - (-774.84726875 * x0 / log(x4 * x5) - -41.9259948569)) / (x2 * x1)"
+   },
+   "pysr": {
+    "se": false,
+    "expr": "(x3 + (x0 - 0.68851584)/x5)*log(x2)/(sqrt(x1)*x2)"
+   },
+   "llmsr": {
+    "se": false,
+    "expr": "def f(x):\n    import numpy as np\n    x0, x1, x2, x3, x4, x5 = x[:,0], x[:,1], x[:,2], x[:,3], x[:,4], x[:,5]\n    return 0.0010895167754452558 / (112.10371780196294 + np.exp(-(x0 + x1 + x2 + x3 + x4 + x5)))"
+   },
+   "sec": 128.5
+  },
+  {
+   "idx": 10,
+   "true": "x4*log(x1/x0) - x5*log(x3/x2)",
+   "imcts": {
+    "se": false,
+    "expr": "(log(x5) - 0.992395280262 * x4) * (log(x0) - 2.00012534952 * log(sqrt(x1)))"
+   },
+   "pysr": {
+    "se": true,
+    "expr": "-x4*log(x0/x1) + x5*log(x2/x3)"
+   },
+   "llmsr": {
+    "se": false,
+    "expr": "def f(x):\n    import numpy as np\n    x0, x1 = x[:,0], x[:,1]\n    return -99.37782518431992 * np.sin(x0) * np.cos(x1) + -2.91499790071846 * x0 - -3.0266915244115604 * x1"
+   },
+   "sec": 128.7
+  },
+  {
+   "idx": 11,
+   "true": "sqrt(x0/((1.0 - x1*(x0 - 1.0)/(x0*x2*(x1/x2 + 0.02)))*(x0 - 1.0)))",
+   "imcts": {
+    "se": false,
+    "expr": "2.28006878295 + sqrt(x1 / x0 / 0.999998628385) * 0.00210549300099 * (0.975356213107 * sqrt(x0) - sqrt(x2) + sqrt(x2 * 0.994382449146)) * 1.00000068581 * (-0.706228202741 + log(x0 / 1.62915732119))"
+   },
+   "pysr": {
+    "se": false,
+    "expr": "sqrt(x0)*exp(-0.519354*sqrt(x2/x1)) + 1.0938727"
+   },
+   "llmsr": {
+    "se": false,
+    "expr": "def f(x):\n    import numpy as np\n    x0, x1, x2 = x[:,0], x[:,1], x[:,2]\n    return 2.1708642850228355 + 0.05666584786647953*x0 + 1.9367637173834804e-06*x1 - 1.462359399773409e-06*x2 + 0.034928185865718345*np.sin(x0 + x1)"
+   },
+   "sec": 130.3
+  },
+  {
+   "idx": 12,
+   "true": "x0*x1**0.5/x2",
+   "imcts": {
+    "se": false,
+    "expr": "x1 * x0 / (-4.24771594366e-06 + sqrt(x1)) / (x2 * 1.00000008013)"
+   },
+   "pysr": {
+    "se": false,
+    "expr": "sqrt(x1)*(x0 + 4.310283e-7*x1)/x2"
+   },
+   "llmsr": {
+    "se": false,
+    "expr": "def f(x):\n    import numpy as np\n    x0, x1 = x[:,0], x[:,1]\n    return np.exp(-x0 * x1)"
+   },
+   "sec": 121.9
+  },
+  {
+   "idx": 13,
+   "true": "(x0 - x1)/x0",
+   "imcts": {
+    "se": true,
+    "expr": "0.999999988989 / x0 * (x0 - x1)"
+   },
+   "pysr": {
+    "se": false,
+    "expr": "1.0 - (x0 + x1 - (x0 - 1*0.14293583) + 0.2959846)/x0"
+   },
+   "llmsr": {
+    "se": false,
+    "expr": "def f(x):\n    import numpy as np\n    x0, x1 = x[:,0], x[:,1]\n    return -x0**2 * np.exp(-x1)"
+   },
+   "sec": 119.7
+  },
+  {
+   "idx": 14,
+   "true": "x0*x1/x2",
+   "imcts": {
+    "se": true,
+    "expr": "x1 / x2 * x0"
+   },
+   "pysr": {
+    "se": false,
+    "expr": "(x1*(x0 + 1.9059189e-5) - 0.00012306726)/x2"
+   },
+   "llmsr": {
+    "se": false,
+    "expr": "def f(x):\n    import numpy as np\n    x0, x1, x2 = x[:,0], x[:,1], x[:,2]\n    return 1000000000.0 * np.exp(-((x0 - 0.5)**2 + (x1 - 0.5)**2 + (x2 - 0.5)**2) / 0.02) + 5942731.097704979"
+   },
+   "sec": 123.1
+  },
+  {
+   "idx": 15,
+   "true": "0.125*x0*x1*x2**2",
+   "imcts": {
+    "se": true,
+    "expr": "(x1 - (x1 - x2 * 0.125000000253)) * x1 * x0 * x2"
+   },
+   "pysr": {
+    "se": true,
+    "expr": "0.125*x0*x1*x2*x2"
+   },
+   "llmsr": {
+    "se": false,
+    "expr": "def f(x):\n    import numpy as np\n    x0, x1, x2 = x[:,0], x[:,1], x[:,2]\n    return x0 * np.exp(x1) / (x2 + 1.0)"
+   },
+   "sec": 120.8
+  },
+  {
+   "idx": 16,
+   "true": "1.4142135623731*sqrt(x0*(x3 - x4)/(x1*x2*x5))",
+   "imcts": {
+    "se": false,
+    "expr": "(2.57313897032 - -219172.696478 / x1) * 2.36734961626 / (log(log(x5)) / 2.31928508719 * sqrt(sqrt(x5) * x2))"
+   },
+   "pysr": {
+    "se": false,
+    "expr": "sqrt(x0*x3/(x1*x2*x5))"
+   },
+   "llmsr": {
+    "se": false,
+    "expr": "def f(x):\n    import numpy as np\n    x0, x1 = x[:, 0], x[:, 1]\n    return x0 / (x1 + -6176.815046896568)"
+   },
+   "sec": 129.9
+  },
+  {
+   "idx": 17,
+   "true": "1.4142135623731*x0*sqrt(x1*x4*(x5 - x6)/(x2*x3))",
+   "imcts": {
+    "se": false,
+    "expr": "(x0 - -240.962603644) * (-1998069.63828 / x2 + 0.329158294725 * (11505296.048 * sqrt(x2) * x1 / x2 + sqrt(x6) - -1.20699244686e+48 / sqrt(exp(x2)))) + -9724584.0912"
+   },
+   "pysr": {
+    "se": false,
+    "expr": "(x5 - 344799740.0)*13732.177/(x2 - (x3*(-162463.52) - 1*2624.3171))"
+   },
+   "llmsr": {
+    "se": false,
+    "expr": "def f(x):\n    import numpy as np\n    x0, x1 = x[:,0], x[:,1]\n    return 5000.0 * np.exp(1.2 * x0 + 0.8 * x1)"
+   },
+   "sec": 128.4
+  },
+  {
+   "idx": 18,
+   "true": "1.4142135623731*x0*sqrt(x1*x4*(x4 - x5)/(x2*x3*x6*x7))",
+   "imcts": {
+    "se": false,
+    "expr": "((494.612776008 - 0.820961706341 / x3) * sqrt(exp(x1) + exp(x3)) * 1.0296173208 * x0 / x7 + 24445.5811376) * 1.02636420678 / (exp(0.206893689672 * x7 / x0) / x4) / x3 / (14640605.3698 + (x2 - x6) * x6)"
+   },
+   "pysr": {
+    "se": false,
+    "expr": "0.143380437996262*x4*sqrt(1/(sqrt(x2)*x3))"
+   },
+   "llmsr": {
+    "se": false,
+    "expr": "def f(x):\n    import numpy as np\n    x0, x1 = x[:,0], x[:,1]\n    return 256.0 * np.exp(2.0 * x0 + 3.0 * x1)"
+   },
+   "sec": 127.7
+  },
+  {
+   "idx": 19,
+   "true": "x0*(x0**2*x1 + 1.0)/(x0**2*x1*(2.0*x2 + 1.0) + 1.0)",
+   "imcts": {
+    "se": false,
+    "expr": "(x0 + exp((0.110156927504 / (x0 - exp(x0) + 0.353133749628) - (x0 - cos(x1)) / (9.2628713803 + x0 / (x1 / 6.20530181146) + x2)) * 17.9667819701)) * 0.515356234284 / (exp(-8.13316267443 / (12.3339219397 + x2)) + x2)"
+   },
+   "pysr": {
+    "se": false,
+    "expr": "0.4936986*(x0 + sqrt(x2)/(x1*x2 + x1 + 0.5716796))/(x2 + 0.49715933)"
+   },
+   "llmsr": {
+    "se": false,
+    "expr": "def f(x):\n    import numpy as np\n    x0, x1 = x[:,0], x[:,1]\n    return 0.11261377378867443 * (x0 + np.sqrt(x1))"
+   },
+   "sec": 136.9
+  },
+  {
+   "idx": 20,
+   "true": "x0*(x1**2*x2 + 1.0)",
+   "imcts": {
+    "se": false,
+    "expr": "x0 - x0*(x1*-3.29e-06*x2*x2*x1 - x0*(x1*x0*x1 - (0.878*x1+0.999)*5.03e-05/x2)*1.00000001/x0)*x2/x0"
+   },
+   "pysr": {
+    "se": true,
+    "expr": "x0*x1**2*x2 + x0"
+   },
+   "llmsr": {
+    "se": false,
+    "expr": ""
+   },
+   "sec": 0
+  }
+ ]
+}

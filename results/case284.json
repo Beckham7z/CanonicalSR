@@ -1,0 +1,110 @@
+{
+ "domain": {
+  "formula": "K_Ic = Y*sigma*sqrt(pi*a)",
+  "vars": [
+   {
+    "sym": "Y (x0)",
+    "meaning": "几何修正因子（裂纹形状/构件几何）",
+    "unit": "1",
+    "range": [
+     0.8,
+     1.5
+    ]
+   },
+   {
+    "sym": "sigma (x1)",
+    "meaning": "远场施加拉应力",
+    "unit": "MPa",
+    "range": [
+     10.0,
+     1500.0
+    ]
+   },
+   {
+    "sym": "a (x2)",
+    "meaning": "裂纹长度",
+    "unit": "m",
+    "range": [
+     1e-06,
+     0.01
+    ]
+   }
+  ],
+  "output": {
+   "sym": "K_Ic",
+   "unit": "MPa*m^1/2"
+  },
+  "source": "Mechanical behavior of materials; LEFM I 型应力强度因子"
+ },
+ "recovery": {
+  "expression": "sqrt(pi)*(x0*x1*sqrt(x2))",
+  "arm": "logdiff",
+  "nrmse": 7.19e-08,
+  "complexity": 8,
+  "se": true,
+  "in_sample_relerr": 6.280167839747016e-08
+ },
+ "extrapolation": [
+  {
+   "variable": "Y (x0)",
+   "factor": 2.0,
+   "range": [
+    1.5,
+    3.0
+   ],
+   "relerr": 3.231904095630067e-16
+  },
+  {
+   "variable": "Y (x0)",
+   "factor": 5.0,
+   "range": [
+    1.5,
+    7.5
+   ],
+   "relerr": 2.5855232765040566e-16
+  },
+  {
+   "variable": "sigma (x1)",
+   "factor": 2.0,
+   "range": [
+    1500.0,
+    3000.0
+   ],
+   "relerr": 2.3390443175729673e-16
+  },
+  {
+   "variable": "sigma (x1)",
+   "factor": 5.0,
+   "range": [
+    1500.0,
+    7500.0
+   ],
+   "relerr": 1.8712354540583753e-16
+  },
+  {
+   "variable": "a (x2)",
+   "factor": 2.0,
+   "range": [
+    0.01,
+    0.02
+   ],
+   "relerr": 3.306796852548873e-16
+  },
+  {
+   "variable": "a (x2)",
+   "factor": 5.0,
+   "range": [
+    0.01,
+    0.05
+   ],
+   "relerr": 2.7885359502747793e-16
+  }
+ ],
+ "decoy": {
+  "description": "范围内 5 次多项式伪装 sqrt(pi*a)（经典装饰式）",
+  "in_sample_relerr": 0.023650563932317226,
+  "extrap_a_5x_relerr": 0.0517030499620276,
+  "recovered_extrap_a_5x_relerr": 2.7885359502747793e-16
+ },
+ "sec": 0.1
+}
